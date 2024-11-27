@@ -7,13 +7,16 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/nic/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 export EDITOR=nvim
 export VISUAL=nvim
+
+export CC=clang
+export CXX=clang++
 
 # folder with alias
 source "$HOME/.zsh/alias.zsh"
