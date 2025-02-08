@@ -1,14 +1,14 @@
-mkdirg() {
+function mkdirg() {
 	mkdir -p "$1"
 	cd "$1"
 }
 
-gcom() {
+function gcom() {
 	git add .
 	git commit -m "$1"
 }
 
-lazyg() {
+function lazyg() {
 	git add .
 	git commit -m "$1"
 	git push
