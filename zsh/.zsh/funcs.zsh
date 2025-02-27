@@ -13,3 +13,7 @@ function lazyg() {
 	git commit -m "$1"
 	git push
 }
+
+function krn(){
+	kitten @ set-tab-title "$1"
+}
