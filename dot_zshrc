@@ -18,8 +18,6 @@ export VISUAL=nvim
 export CC=clang
 export CXX=clang++
 
-export PS1=""
-
 # folder with alias
 source "$HOME/.zsh/alias.zsh"
 # folder with funcs
