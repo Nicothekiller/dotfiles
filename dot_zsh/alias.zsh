@@ -17,5 +17,7 @@ alias lg="lazygit"
 
 alias cd="z"
 
+alias cat="bat"
+
 # Alias for ssh in kitty
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
