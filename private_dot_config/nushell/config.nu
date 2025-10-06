@@ -35,5 +35,16 @@ alias cat = bat
 alias cd = z
 alias ip = ip -color
 
+# functions
+
+# For searching arch packages and their info
+def pacbrowse [] {
+  pacman -Slq | fzf --multi --preview 'pacman -Si {1}'
+}
+# For searching arch/aur packages and their info
+def yaybrowse [] {
+  yay -Slq | fzf --multi --preview 'yay -Si {1}'
+}
+
 # carapace config
 source $"($nu.cache-dir)/carapace.nu"
