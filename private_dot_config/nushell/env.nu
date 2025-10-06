@@ -16,4 +16,11 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+
+# zoxide
 zoxide init nushell | save -f ~/.zoxide.nu
+
+# carapace env
+$env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
+mkdir $"($nu.cache-dir)"
+carapace _carapace nushell | save --force $"($nu.cache-dir)/carapace.nu"
