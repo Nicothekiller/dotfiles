@@ -31,6 +31,9 @@ $env.config.edit_mode = "vi"
 
 # aliases
 alias lg = lazygit
+alias cat = bat
+alias cd = z
+alias ip = ip -color
 
 # carapace config
 source $"($nu.cache-dir)/carapace.nu"
