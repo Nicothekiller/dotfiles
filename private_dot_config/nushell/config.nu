@@ -26,6 +26,7 @@ starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.n
 
 # env
 $env.config.buffer_editor = "nvim"
+$env.EDITOR = "nvim"
 $env.config.show_banner = false
 $env.config.edit_mode = "vi"
 
