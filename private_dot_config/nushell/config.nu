@@ -47,5 +47,10 @@ def yaybrowse [] {
   yay -Slq | fzf --multi --preview 'yay -Si {1}'
 }
 
+# For renaming tabs in kitty more easily
+def krn [str: string] {
+  kitten @ set-tab-title $str
+}
+
 # carapace config
 source $"($nu.cache-dir)/carapace.nu"
