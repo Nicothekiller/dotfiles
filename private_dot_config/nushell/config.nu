@@ -30,6 +30,9 @@ $env.EDITOR = "nvim"
 $env.config.show_banner = false
 $env.config.edit_mode = "vi"
 
+# for python venv, starship already does this.
+$env.VIRTUAL_ENV_DISABLE_PROMPT = true
+
 # aliases
 alias lg = lazygit
 alias cat = bat
