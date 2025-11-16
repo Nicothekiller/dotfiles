@@ -33,6 +33,9 @@ $env.config.edit_mode = "vi"
 # for python venv, starship already does this.
 $env.VIRTUAL_ENV_DISABLE_PROMPT = true
 
+# add .local/bin to path
+$env.PATH = ($env.PATH | append [$"($env.HOME)/.local/bin", $"($env.HOME)/.cargo/bin"])
+
 # aliases
 alias lg = lazygit
 alias cat = bat
