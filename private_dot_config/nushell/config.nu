@@ -58,5 +58,22 @@ def krn [str: string] {
   kitten @ set-tab-title $str
 }
 
+# Opens a dev setup in kitty.
+#
+# By default, it opens:
+# - Neovim in the current tab
+# - Opencode in another tab (only when -o / --opc is passed)
+# - A tab for commands
+def dev [
+  --opc (-o) # Include an opencode tab
+] {
+  kitten @ set-tab-title nvim
+  if $opc {
+    kitten @ launch --type=tab --title=opencode --cwd=current nu -e opencode
+  }
+  kitten @ launch --type=tab --title=commands --cwd=current
+  kitten @ send-text "nvim\n"
+}
+
 # carapace config
 source $"($nu.cache-dir)/carapace.nu"
