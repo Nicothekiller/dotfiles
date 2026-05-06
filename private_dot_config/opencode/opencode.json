@@ -5,5 +5,23 @@
     "edit": "ask",
     "webfetch": "ask"
   },
-  "plugin": ["opencode-gemini-auth@latest"]
+  "plugin": ["opencode-gemini-auth@latest"],
+
+  "provider":{
+    "USFQ":{
+      "name": "USFQ models",
+      "options":{
+        "baseURL": "https://ai.usfq.edu.ec/api/ai/main/v1"
+      },
+      "models":{
+        "deepseek-ai/DeepSeek-V4-Flash": {
+          "name": "DeepSeek V4 Flash",
+          "limit": {
+            "context": 1048576,
+            "output": 384000
+          }
+        }
+      }
+    }
+  }
 }
